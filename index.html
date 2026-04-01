@@ -6,7 +6,7 @@
     <title>Ademar Neto | Advocacia Cível e Previdenciária</title>
     <meta name="description" content="Atendimento jurídico especializado em Direito Civil e Previdenciário. Ademar Neto - OAB/PB 29.542.">
     
-    <!-- Fonts: Raleway (Secundária da marca) e Outfit (Substituta moderna para a Bukra) -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,16 +19,15 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Raleway', 'sans-serif'],
+                        sans:['Raleway', 'sans-serif'],
                         display: ['Outfit', 'sans-serif'],
                     },
                     colors: {
-                        /* Nova Paleta: Foge do óbvio. Usa Chumbo e Azul Safira */
-                        lawDark: '#0F172A',     /* Slate 900 - Fundo principal escuro */
-                        lawCard: '#1E293B',     /* Slate 800 - Fundo de cards */
-                        accentBlue: '#2563EB',  /* Royal/Sapphire Blue - Cor de destaque */
-                        accentHover: '#1D4ED8', /* Azul mais escuro para hover */
-                        lawLight: '#F8FAFC',    /* Fundo claro */
+                        lawDark: '#0F172A',     
+                        lawCard: '#1E293B',     
+                        accentBlue: '#2563EB',  
+                        accentHover: '#1D4ED8', 
+                        lawLight: '#F8FAFC',    
                     }
                 }
             }
@@ -44,7 +43,6 @@
             border-bottom: 1px solid rgba(37, 99, 235, 0.2);
         }
 
-        /* Imagem de fundo premium (Arquitetura corporativa moderna, foge do martelo de juiz) */
         .hero-bg {
             background: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 100%), 
                         url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
@@ -71,17 +69,16 @@
 </head>
 <body class="bg-lawLight text-lawDark font-sans overflow-x-hidden selection:bg-accentBlue selection:text-white">
 
-    <!-- Navbar (Corrigida para não cortar no celular) -->
+    <!-- Navbar -->
     <nav class="fixed w-full z-[100] glass-nav py-3 transition-all duration-300">
         <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
             
-            <!-- Logo Tipográfica -->
+            <!-- Logo Imagem (Com filtro para ficar branca no fundo escuro) -->
             <a href="#" class="flex flex-col z-50">
-                <span class="font-display font-bold text-xl md:text-2xl text-white tracking-tight leading-none">ADEMAR NETO</span>
-                <span class="text-[7px] md:text-[9px] font-bold uppercase tracking-[0.3em] text-accentBlue mt-1">Advogado</span>
+                <img src="logo.png" alt="Ademar Neto Advogado" class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:opacity-80 transition-opacity">
             </a>
 
-            <!-- Links (Escondidos no celular para não quebrar o layout) -->
+            <!-- Links -->
             <div class="hidden lg:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-300">
                 <a href="#atuacao" class="hover:text-accentBlue transition-colors">Áreas de Atuação</a>
                 <a href="#perfil" class="hover:text-accentBlue transition-colors">O Profissional</a>
@@ -184,7 +181,6 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 
                 <div class="relative" data-aos="fade-right">
-                    <!-- Imagem premium de escritório -->
                     <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop" alt="Escritório de Advocacia" class="rounded-2xl shadow-2xl opacity-90 hover:opacity-100 transition duration-700">
                     <div class="absolute -bottom-8 -right-4 md:-right-8 bg-accentBlue p-6 md:p-8 rounded-xl shadow-xl">
                         <span class="font-display text-2xl md:text-4xl text-white block leading-none mb-2 font-bold">OAB/PB</span>
@@ -296,8 +292,8 @@
     <footer class="bg-lawDark border-t border-white/5 py-12">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                <span class="font-display font-bold text-xl text-white tracking-wide">ADEMAR NETO</span>
-                <span class="text-[8px] font-bold uppercase tracking-[0.3em] text-accentBlue mt-1">Advocacia & Consultoria</span>
+                <!-- Logo no Rodapé -->
+                <img src="logo.png" alt="Ademar Neto Advogado" class="h-12 md:h-16 w-auto object-contain brightness-0 invert opacity-90 mb-2">
             </div>
             
             <div class="text-center">
