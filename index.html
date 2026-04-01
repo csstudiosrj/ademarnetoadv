@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ademar Neto | Advocacia Cível e Previdenciária na Paraíba</title>
+    <meta name="description" content="Atendimento jurídico especializado em Direito Civil e Previdenciário. Ademar Neto - OAB/PB 29.542.">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif:['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        lawDark: '#0B132B',
+                        lawNavy: '#1C2541',
+                        lawGold: '#C5A880',
+                        lawLight: '#F8F9FA',
+                        lawGray: '#6C757D'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; background-color: #F8F9FA; }
+        
+        .glass-nav {
+            background: rgba(11, 19, 43, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+        }
+
+        .hero-bg {
+            background: linear-gradient(to right, rgba(11, 19, 43, 0.95) 0%, rgba(11, 19, 43, 0.7) 100%), 
+                        url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(to right, #C5A880, #E6D5B8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .service-card {
+            transition: all 0.4s ease;
+            border: 1px solid rgba(197, 168, 128, 0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(197, 168, 128, 0.5);
+            box-shadow: 0 10px 30px rgba(11, 19, 43, 0.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #F8F9FA; }
+        ::-webkit-scrollbar-thumb { background: #C5A880; }
+    </style>
+</head>
+<body class="bg-lawLight text-lawDark font-sans overflow-x-hidden selection:bg-lawGold selection:text-lawDark">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-[100] glass-nav py-4 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            
+            <a href="#" class="flex flex-col">
+                <span class="font-serif font-bold text-2xl text-white tracking-wide leading-none">ADEMAR NETO</span>
+                <span class="text-[8px] font-medium uppercase tracking-[0.3em] text-lawGold mt-1">Advocacia & Consultoria</span>
+            </a>
+
+            <div class="hidden md:flex gap-8 text-[11px] font-medium uppercase tracking-widest text-gray-300">
+                <a href="#atuacao" class="hover:text-lawGold transition-colors">Áreas de Atuação</a>
+                <a href="#perfil" class="hover:text-lawGold transition-colors">O Profissional</a>
+                <a href="#contato" class="hover:text-lawGold transition-colors">Atendimento</a>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <span class="hidden lg:block text-xs text-lawGold font-serif italic border-r border-lawGold/30 pr-6">OAB/PB 29.542</span>
+                <a href="https://wa.me/558398734857" target="_blank" class="bg-transparent border border-lawGold text-lawGold px-6 py-2 text-xs font-medium tracking-widest hover:bg-lawGold hover:text-lawDark transition-all flex items-center gap-2 uppercase">
+                    <i class="fab fa-whatsapp text-lg"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-bg z-10">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl" data-aos="fade-right" data-aos-duration="1200">
+                
+                <div class="inline-flex items-center gap-3 border border-lawGold/30 px-4 py-2 mb-8 bg-lawDark/50 backdrop-blur-sm">
+                    <i class="fas fa-balance-scale text-lawGold text-sm"></i>
+                    <span class="text-white font-medium text-[10px] uppercase tracking-[0.2em]">Atuação Ética e Transparente</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
+                    Defesa técnica e <br>
+                    <span class="gold-gradient-text italic">compromisso</span> com os seus direitos.
+                </h1>
+                
+                <p class="text-lg text-gray-300 mb-10 font-light max-w-xl leading-relaxed">
+                    Escritório de advocacia na Paraíba com atuação especializada em Direito Civil e Previdenciário. Análise jurídica aprofundada para a melhor resolução do seu caso.
+                </p>
+                
+                <div class="flex flex-wrap gap-6 items-center">
+                    <a href="#contato" class="bg-lawGold text-lawDark px-10 py-4 font-medium hover:bg-white transition-all uppercase tracking-widest text-xs">
+                        Agendar Atendimento
+                    </a>
+                    <a href="#atuacao" class="text-white px-6 py-4 font-medium hover:text-lawGold transition-all uppercase tracking-widest text-xs flex items-center gap-2">
+                        Conhecer Áreas <i class="fas fa-arrow-down text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="py-24 bg-white relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-lawGold mb-4 block">Especialidades</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-lawDark tracking-tight">Áreas de <span class="italic text-lawGray">Atuação</span></h2>
+                <div class="w-16 h-1 bg-lawGold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Direito Civil -->
+                <div class="service-card bg-lawLight p-10 md:p-14" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-lawDark flex items-center justify-center text-lawGold mb-8 rounded-sm">
+                        <i class="fas fa-landmark text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-lawDark mb-4">Direito Civil</h3>
+                    <p class="text-lawGray text-sm leading-relaxed mb-8">
+                        Atuação consultiva e contenciosa nas relações civis, visando a proteção do patrimônio e a garantia dos direitos fundamentais nas relações interpessoais e comerciais.
+                    </p>
+                    <ul class="space-y-3 text-sm text-lawDark font-medium">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Contratos e Obrigações</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Direito de Família e Sucessões</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Responsabilidade Civil (Indenizações)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Direitos do Consumidor</li>
+                    </ul>
+                </div>
+
+                <!-- Direito Previdenciário -->
+                <div class="service-card bg-lawLight p-10 md:p-14" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-lawDark flex items-center justify-center text-lawGold mb-8 rounded-sm">
+                        <i class="fas fa-hands-holding-child text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-lawDark mb-4">Direito Previdenciário</h3>
+                    <p class="text-lawGray text-sm leading-relaxed mb-8">
+                        Assessoria completa junto ao INSS e vias judiciais para garantir o acesso a benefícios previdenciários e assistenciais de forma justa e correta.
+                    </p>
+                    <ul class="space-y-3 text-sm text-lawDark font-medium">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Aposentadorias (Tempo de contribuição, Idade, Especial)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Benefício Assistencial (BPC/LOAS)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Pensão por Morte e Auxílio-Doença</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-lawGold text-[10px]"></i> Planejamento e Revisão Previdenciária</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- O Profissional -->
+    <section id="perfil" class="py-24 bg-lawNavy text-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="relative" data-aos="fade-right">
+                    <!-- Imagem representativa de escritório/advocacia -->
+                    <img src="https://images.unsplash.com/photo-1505664173622-18169dc5a522?q=80&w=1000&auto=format&fit=crop" alt="Escritório de Advocacia" class="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                    <div class="absolute -bottom-8 -right-8 bg-lawGold p-8 hidden md:block shadow-xl">
+                        <span class="font-serif text-4xl text-lawDark block leading-none mb-2">OAB/PB</span>
+                        <span class="font-bold text-lawDark tracking-widest text-sm">29.542</span>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-lawGold mb-4 block">O Profissional</span>
+                    <h2 class="text-4xl font-serif font-bold text-white mb-6">Ademar Neto</h2>
+                    
+                    <div class="space-y-6 text-gray-300 font-light leading-relaxed text-sm">
+                        <p>
+                            Inscrito na Ordem dos Advogados do Brasil, Seccional Paraíba, sob o número 29.542, Ademar Neto atua com foco na resolução técnica e estratégica de conflitos jurídicos.
+                        </p>
+                        <p>
+                            Acreditamos que o exercício da advocacia exige constante atualização, atendimento humanizado e, acima de tudo, transparência com o cliente em todas as etapas do processo. Nosso escritório está preparado para oferecer consultoria preventiva e atuação contenciosa firme nas áreas Cível e Previdenciária.
+                        </p>
+                        <p class="border-l-2 border-lawGold pl-6 italic text-white/80 mt-8">
+                            "A justiça é o firme e contínuo desejo de dar a cada um o que lhe é devido."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-lawLight relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto bg-white shadow-[0_20px_50px_rgba(0,0,0,0.05)] grid md:grid-cols-5">
+                
+                <!-- Info -->
+                <div class="md:col-span-2 bg-lawDark p-12 text-white flex flex-col justify-between" data-aos="fade-right">
+                    <div>
+                        <h3 class="font-serif text-3xl mb-2">Atendimento</h3>
+                        <p class="text-lawGold text-sm font-light mb-12">Agende uma análise do seu caso.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-phone text-lawGold mt-1"></i>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Telefone / WhatsApp</p>
+                                    <p class="text-sm">(83) 9873-4857</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-lawGold mt-1"></i>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Localização</p>
+                                    <p class="text-sm">Atendimento presencial e online em toda a Paraíba (PB).</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-clock text-lawGold mt-1"></i>
+                                <div>
+                                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Horário</p>
+                                    <p class="text-sm">Segunda a Sexta, horário comercial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="md:col-span-3 p-12" data-aos="fade-left">
+                    <h3 class="font-serif text-2xl text-lawDark mb-8">Envie sua mensagem</h3>
+                    
+                    <form action="https://formspree.io/f/mvzvrvzp" method="POST" class="space-y-6">
+                        <div>
+                            <label class="text-[10px] uppercase font-bold tracking-widest text-lawGray block mb-2">Nome Completo</label>
+                            <input type="text" name="name" required class="w-full bg-lawLight border border-gray-200 px-4 py-3 text-lawDark focus:border-lawGold outline-none transition-colors text-sm">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[10px] uppercase font-bold tracking-widest text-lawGray block mb-2">Telefone / WhatsApp</label>
+                                <input type="text" name="phone" required class="w-full bg-lawLight border border-gray-200 px-4 py-3 text-lawDark focus:border-lawGold outline-none transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-bold tracking-widest text-lawGray block mb-2">E-mail</label>
+                                <input type="email" name="email" required class="w-full bg-lawLight border border-gray-200 px-4 py-3 text-lawDark focus:border-lawGold outline-none transition-colors text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-[10px] uppercase font-bold tracking-widest text-lawGray block mb-2">Resumo do Caso</label>
+                            <textarea name="message" rows="4" required class="w-full bg-lawLight border border-gray-200 px-4 py-3 text-lawDark focus:border-lawGold outline-none transition-colors text-sm resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-lawDark text-white font-medium py-4 hover:bg-lawGold transition-colors uppercase tracking-widest text-xs mt-2">
+                            Solicitar Contato
+                        </button>
+                        <p class="text-[10px] text-lawGray text-center mt-4">As informações enviadas são protegidas por sigilo profissional.</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lawDark border-t border-white/10 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="font-serif font-bold text-xl text-white tracking-wide">ADEMAR NETO</span>
+                <span class="text-[8px] font-medium uppercase tracking-[0.3em] text-lawGold mt-1">Advocacia & Consultoria</span>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-gray-400 text-xs mb-2">Ademar Neto - OAB/PB 29.542</p>
+                <p class="text-gray-500 text-[10px]">Site em conformidade com o Provimento 205/2021 do Conselho Federal da OAB.</p>
+            </div>
+
+            <div class="text-center md:text-right">
+                <p class="text-gray-500 text-[10px] uppercase font-bold tracking-[0.3em]">
+                    Desenvolvido por <br>
+                    <a href="https://csstudios.vercel.app/" target="_blank" class="text-lawGold hover:text-white transition hover:underline mt-1 inline-block">CS studios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 50,
+        });
+
+        // Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-3');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('py-3');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
